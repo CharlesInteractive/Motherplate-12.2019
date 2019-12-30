@@ -1,0 +1,28 @@
+// Reset browser default styles with Normalize
+@import "../../node_modules/normalize.css/normalize";
+
+// Install Font-Awesome
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+
+
+// Install fonts from where ever
+//@import url("https://use.typekit.net/*******.css");
+
+// Set variables and mixins
+@import "base/config";
+@import "base/mixins";
+
+// Base layout styles
+@import "base/grid";
+@import "base/type";
+@import "base/print";
+
+// Reusable components
+@import "components/buttons";
+@import "components/forms";
+@import "components/media";
+@import "components/nav";
+
+// Pages
+@import "pages/layout";
+

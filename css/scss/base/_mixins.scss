@@ -1,0 +1,21 @@
+// Clearfix hack
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+// Responsive
+@mixin responsive($res) {
+    @media screen and (max-width: $res) {
+        @content;
+    }
+}
+
+@mixin mobilefirst($res) {
+    @media screen and (min-width: $res) {
+        @content;
+    }
+}
